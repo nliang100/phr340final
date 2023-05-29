@@ -142,3 +142,59 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+const steps = Array.from(document.querySelectorAll("form .step"));
+const nextBtn = document.querySelectorAll("form .next-btn");
+const prevBtn = document.querySelectorAll("form .previous-btn");
+const submitBtn = document.querySelectorAll("form .submit-btn");
+const form = document.querySelectorAll("form");
+const finalPrevBtn = document.querySelectorAll("form .previous-btn-final");
+
+nextBtn.forEach((button) => {
+	button.addEventListener("click", () => {
+		changeStep("next");
+	});
+});
+
+prevBtn.forEach((button) => {
+	button.addEventListener("click", () => {
+		changeStep("prev");
+	});
+});
+
+submitBtn.forEach((button) =>
+	button.addEventListener("click", () => {
+		changeStep("submit");
+	})
+);
+
+finalPrevBtn.forEach((button) => {
+	button.addEventListener("click", () => {
+		changeStep("prev-member");
+	});
+});
+
+function changeStep(btn) {
+	let index = 0;
+	const active = document.querySelector("form .step.active");
+	index = steps.indexOf(active);
+	steps[index].classList.remove("active");
+	if (btn === "next") {
+		index++;
+	} else if (btn === "prev") {
+		index--;
+	} else if (btn === "submit") {
+		index = 18;
+	} else if (btn === "prev-member") {
+		if ((team_member_count == 1)) {
+			index = 2;
+		} else if ((team_member_count == 2)) {
+			index = 6;
+		} else if ((team_member_count == 3)) {
+			index = 10;
+		} else if ((team_member_count == 4)) {
+			index = 14;
+		}
+	}
+	steps[index].classList.add("active");
+}

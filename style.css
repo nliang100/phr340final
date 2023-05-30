@@ -142,6 +142,7 @@ html {
     padding: 3em;
     color: white;
     letter-spacing: 0.15em;
+    filter: brightness(100%);
 }
 
 .welcome-text-paragraph {
@@ -482,10 +483,10 @@ a {
 }
 
 #citations {
-    background: url(/image/about-cover.jpg) !important;
+    background: url(/image/about-cover.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    filter: brightness(60%)
 }

@@ -476,3 +476,11 @@ form .fields .input-field{
 .input-field input{
     height: 42px;
 }
+
+button {
+    text-decoration: none;
+}
+
+.hero-image citations {
+    background: url(/image/about-cover.jpg);
+}

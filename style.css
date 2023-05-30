@@ -483,4 +483,9 @@ a {
 
 #citations {
     background: url(/image/about-cover.jpg) !important;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }

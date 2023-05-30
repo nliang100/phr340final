@@ -28,10 +28,10 @@
     <!-- NavBar Stuff -->
 <div class="navbar-main">
         <ul class="navbar-main-links" id="navbar-main-links">
-          <li class="links"><a class="nav-hyperlink" href="#">Home</a></li>
-          <li class="links"><a class="nav-hyperlink" href="#">About</a></li>
-          <li class="links"><a class="nav-hyperlink" href="#">Author's Writing</a></li>
-          <li class="links"><a class="nav-hyperlink" href="#">Citations</a></li>
+          <li class="links"><a class="nav-hyperlink" href="index.html">Home</a></li>
+          <li class="links"><a class="nav-hyperlink" href="quiz.html">Quiz</a></li>
+          <li class="links"><a class="nav-hyperlink" href="PHR340_FinalEssay.pdf">Author's Writing</a></li>
+          <li class="links"><a class="nav-hyperlink" href="citations.html">Citations</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -44,12 +44,13 @@
 
       <div class="step step-1 active">
         <h2>Thought Experiment 1: The Dreamers</h2><br>
-        <p>Imagine a society of Dreamers who possess the ability to vividly experience and remember their dreams. 
+        <p>Imagine a society of Dreamers who possess the ability to vividly experience and interact with their dreams. 
             These Dreamers lead seemingly ordinary lives during the day, but their true adventures take place in their dreams each night. 
             In their dreams, they explore fantastical worlds, engage in thrilling adventures, and build deep connections with other Dreamers. 
             <br><br>
             However, upon waking up, the Dreamers have no recollection of their nightly adventures. 
-            They are completely unaware of their dream lives, leaving them with a sense of emptiness while awake. </p>
+            They are completely unaware of their dream lives, leaving them with a sense of emptiness while awake. However, while they are dreaming,
+            they have a profound sense of purpose and fulfillment.</p>
         <div class="form-group">
           <input type="radio" id="yes1" name="question1" value="yes1">
           <label for="firstName">Yes, the Dreamers' lives have meaning
@@ -64,6 +65,17 @@
       </div>
 
       <div class="step step-2">
+        <h2>Thought Experiment 1 Explanation</h2><br>
+        <p>From a Wolfian perspective, the objective and subjective nature of meaning must be considered. 
+            Objectively, Wolf would regard the lives of the Dreamers as not meaningful during waking hours due to the hidden 
+            nature of their dream experiences. However, the subjective dimension of meaningfulness might still be present if 
+            their dream experiences contribute to their overall sense of fulfillment and well-being, even if they are not 
+            consciously aware of it (Wolf 9).</p>
+            <br>
+         <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <div class="step step-3">
         <h2>Thought Experiment 2: The Composers</h2><br>
         <p>During the Middle Ages, a society of composers was formed who possessed a gift for composing magnificent symphonies. 
             These composers could create masterpieces of unparalleled beauty. 
@@ -83,8 +95,21 @@
         <button type="button" class="previous-btn">Prev</button>
         <button type="button" class="next-btn">Next</button>
       </div>
-
-      <div class="step step-3">
+      <div class="step step-4">
+        <h2>Thought Experiment 2 Explanation</h2><br>
+        <p>From a Wolfian perspective, the Composers are internally satisfied with their projects, while not impacting
+            anything larer than themselves thorugh their composing. The subjective nature of Wolf's proposal is fulfilled, while the objective
+            side is not. Wolf would classify these lives as not meaningful, no different than the person smoking pot or doing crossword puzzles (Wolf 9).
+        </p>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+      <div class="step step-5">
+         <h2>Thought Experiment 3: The Observers</h2><br>
+         <p>Imagine a group of Timeless Observers who exist outside the bounds of time and space. 
+            These Observers can observe the entire lifespan of an individual in a single moment. 
+            They witness every moment, every joy, every sorrow, and every achievement of a person's life within an instant. 
+            The Observers, however, are detached from the flow of time and lack the ability to directly interact with the individuals they observe. 
+            All they can do is observe the endless cycle of time alone, filling them with an internal sense of sadness.</p>
         <div class="form-group">
           <input type="radio" id="yes3" name="question3" value="yes3">
           <label for="firstName">Yes, the Observers' lives have meaning
@@ -98,14 +123,21 @@
         <button type="button" class="previous-btn">Prev</button>
         <button type="button" class="next-btn" onclick="check();">Submit</button>
       </div>
-
-     <div class="step step-4">
+      <div class="step step-6">
+        <h2>Thought Experiment 3 Explanation</h2>
+        <p>Through Wolf's view, the Observers in this scenario are neither subjectively satisfied with themselves or impacting
+            a project that is greater than themselves. Therefore, this scenario fails Wolf's test in both the subjective and objective sides (Wolf 9).
+            Wolf would regard the lives of the Oberservers as not meaningful.
+        </p>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+     <div class="step step-7">
         <h2>Results</h2>
         <p>Thank you for completing this quiz. You answered</p>
         <p id="message"></p><br><br>
-        <p class="inline">Therefore, you are</p>
+        <p class="inline">Therefore, your perception of whether life is meaningful is</p>
         <p id="subjective" class="inline"></p>
-        <p class="inline">% subjective</p>
+        <p class="inline">% subjective. If you would like to see the author's writing on Susan Wolf, please click the link above on the navigation bar. If you would like to retake the quiz, please refresh the page.</p>
      </div>
 
     </form>

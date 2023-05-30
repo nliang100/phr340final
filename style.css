@@ -477,10 +477,10 @@ form .fields .input-field{
     height: 42px;
 }
 
-button {
+a {
     text-decoration: none;
 }
 
-.hero-image citations {
-    background: url(/image/about-cover.jpg);
+#citations {
+    background: url(/image/about-cover.jpg) !important;
 }
